@@ -1,0 +1,76 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3.5em;
+    background-color: rgb(216, 215, 215);
+    padding-left: 0.5em;
+}
+
+.logo{
+    float: left;
+    position: relative;
+    top: 20%;
+}
+.containerSearch{
+    float: left;
+    width: 50%;
+    height: 80%;
+    background-color: antiquewhite;
+    position: relative;
+    top: 10%;
+    margin-left: 1em;
+    border-radius: 1em;
+}
+
+.spanIcon{
+    position: relative;
+    top: 14%;
+    width: 2em;
+    height: 2em;
+    float: left;
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
+
+.inputSearch{
+    float: left;
+    position: relative;
+    top: 10%;
+    width: 50%;
+    height: 80%;   
+    border: none;
+    background-color: antiquewhite;
+}
+.inputSearch:focus{
+    border: none;
+    outline: 0;
+}
+
+input[type='text']:focus + span:after {
+    content:'\00D7';
+}
+input+span{
+    float: left;
+    position: relative;
+    top: 0%;
+    font-weight: bold;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+.dropMenu{
+    float: right;
+    position: relative;
+    top: 25%;
+    right: 5%;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+.dropMenu::after{
+    content: " \27F1";
+}
