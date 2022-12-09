@@ -226,12 +226,13 @@ nav>ul>li>a:hover{
   }
 
 .searchBar{
-    position:relative;
+    position:fixed;
     width: 100%;
     height: 3.5em;
     background-color: rgb(216, 215, 215);
     top: 4.5em;
     display: none;
+    z-index: 1;
 }
 .searchBar>.containerSearch{
     width: 90%;
@@ -318,9 +319,14 @@ main>.sideLeft>p{
         width: 100%;
         height: 50%;
     }
+ 
     main>.sideLeft{
         width: 100%;
     }
+    main>.sideLeft>h1 ,main>.sideLeft>p{
+        width: 70%;
+    }
+    
     
 }
 main>.sideLeft>p>a{
@@ -352,7 +358,7 @@ main>.sideLeft>p>a{
     }
 
 }
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 500px) {
     main>.sideLeft{
         height: 120%;
         padding-right: 1em;
