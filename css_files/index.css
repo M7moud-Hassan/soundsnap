@@ -74,3 +74,84 @@ input+span{
 .dropMenu::after{
     content: " \27F1";
 }
+.dropDownContainer{
+    width: 12em;
+    height: 7.5em;
+    border: solid 2px black;
+    position: absolute;
+    top: 130%;
+    left: -12%;
+    right: 37%;
+    background-color: white;
+    box-shadow: 0.3em 0.5em #d2d0d0;
+    display: none;
+}
+.dropDownContainer .arrowSpan{
+    width: 20%;
+    height: 30%;
+    border: solid 2px black;
+    position: absolute;
+    top: -2%;
+    right: 30%;
+    transform: rotate(45deg);
+   background-color: white;
+}
+.dropDownContainer .list{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;   
+}
+span a{
+    color: black;
+    padding: 0.7em 1em;
+    text-decoration: none;
+    display: block;
+}
+span a:hover{
+    background-color: #d2d0d0;
+}
+.list span{
+    color: rgb(131, 128, 128);
+    padding: 0.7em 1em;
+    font-size: 0.8em;
+    text-decoration: none;
+    display: block;
+}
+.dropMenu:hover .dropDownContainer{
+    display: inline;
+}
+nav>ul>li{
+    display: inline-block;
+    padding: 1.2em 1em;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+nav>ul>li>a:hover{
+    color: rgb(155, 155, 155);
+}
+.logIn>a{
+    padding: 0.9em 0em;
+    display: inline-block;
+    font-size: large;
+}
+.logIn>a:hover{
+    color: rgb(155, 155, 155);
+    background-color: rgb(216, 215, 215);;
+}
+.socialBtn{
+    float: right;
+    position: relative;
+    right: 1.5%;
+}
+.socialBtn>a{
+    padding: 0.9em 0em;
+    display: inline-block;
+    font-size: large;
+}
+.socialBtn>a:hover{
+    background-color: transparent;
+    opacity: 0.5;
+}
