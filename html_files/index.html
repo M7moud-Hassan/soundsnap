@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="../css_files/index.css">
 </head>
 <body>
-    <header>
+
+
+    <header class="full">
         <a class="logo" href="index.html"><img src="../resources/logo.svg" alt="not found"></a>
         <div class="containerSearch">
             <img class="spanIcon" src="../resources/icon_search.png" alt="not-found">
@@ -42,5 +44,44 @@
             <a href="#"><img class="social-image" src="../resources/twitter.svg" alt="Twitter button light"></a>
         </span>
     </header>
+
+
+    <header class="mini">
+        <span class="menu" onclick="openNav()">
+            <img src="../resources/menu.svg" alt="not found">
+        </span>
+        <img src="../resources/logo.svg" alt="not found" class="logo">
+        <span class="btnSearch" onclick="ToggleSearchBar()">
+            <img src="../resources/search.svg" alt="">
+        </span>
+    </header>
+    <div class="searchBar" id="searchBar">
+        <div class="containerSearch">
+            <img class="spanIcon" src="../resources/icon_search.png" alt="not-found">
+            <input type="text" name="search" class="inputSearch" placeholder="Search for sound effects">
+            <span></span>
+            <div class="dropMenu"><span>SFX</span>
+                <div class="dropDownContainer">
+                    <span class="arrowSpan"></span>
+                    <span class="list">
+                        <span>Search for</span>
+                        <a href="#">SFX</a>
+                        <a href="#">Music</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Pricing</a>
+        <a href="#">Blog</a>
+        <a href="#">FAQ</a>
+        <a href="#">SFXHD</a>
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+      </div>
+      <script src="../js_files/my_js.js"></script>
 </body>
 </html>
