@@ -360,10 +360,20 @@ main>.sideLeft>p>a{
 }
 @media only screen and (max-width: 500px) {
     main>.sideLeft{
-        height: 120%;
+        height: 50%;
         padding-right: 1em;
     }
     main>.sideLeft>p>a{
         font-size: 0.5em;
+    }
+    main>.sideLeft>p>a{
+        width: 100%;
+        font-size: .7em;
+    }
+    main>.sideLeft>p{
+        font-size: 1em;
+    }
+    main>.sideLeft>h1{
+        font-size: 1.2em;
     }
 }
