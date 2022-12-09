@@ -194,9 +194,6 @@ nav>ul>li>a:hover{
     header.mini{
         display: inline-block;
     }
-    .searchBar>.containerSearch .dropDownContainer{
-        font-size: 0.7em;
-    }
 }
 .mini>.logo{
     position: absolute;
@@ -281,5 +278,5 @@ nav>ul>li>a:hover{
     right: 45%;
 }
 .searchBar>.containerSearch  .inputSearch{
-    width: 50%;
+    width: 60%;
 }
