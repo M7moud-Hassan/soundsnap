@@ -11,5 +11,4 @@ function ToggleSearchBar(){
     }else{
         document.getElementById("searchBar").style.display="none";
     }
-   
 }  
