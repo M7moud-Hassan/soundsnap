@@ -24,6 +24,7 @@ header.mini{
     float: left;
     position: relative;
     top: 20%;
+    width: 10%;
 }
 .containerSearch{
     float: left;
@@ -54,6 +55,7 @@ header.mini{
     height: 80%;   
     border: none;
     background-color: rgb(213, 213, 213);
+    z-index: 1;
 }
 .inputSearch:focus{
     border: none;
@@ -62,6 +64,17 @@ header.mini{
 
 input[type='text']:focus + span:after {
     content:'\00D7';
+}
+.borderSec{
+    position: relative;
+    width: 49%;
+    height: 2.9em;
+    position: fixed;
+    left: 12%;
+}
+input[type='text']:focus ~ .borderSec{
+    border: solid .1em green;
+    border-radius:1em;
 }
 input+span{
     float: left;
@@ -79,6 +92,8 @@ input+span{
     font-size: 1.1em;
     cursor: pointer;
     z-index: 1;
+    padding-left: 0.5em;
+    border-left: solid .1em black;
 }
 .dropMenu::after{
     content: " \27F1";
@@ -296,11 +311,17 @@ main>.sideLeft>p{
      .containerSearch{
          width: 45%;
      }
+     .borderSec{
+        width: 44.5%;
+     }
 }
  
 @media only screen and (max-width: 1000px) {
      .containerSearch{
          width: 40%;
+     }
+     .borderSec{
+        width: 40%;
      }
 }   
  
@@ -311,6 +332,11 @@ main>.sideLeft>p{
      .inputSearch{
          width: 20%;
      }
+     .borderSec{
+        width: 32.5%;
+        left: 12.5%;
+     }
+    
 }
  
 
@@ -326,7 +352,6 @@ main>.sideLeft>p{
     main>.sideLeft>h1 ,main>.sideLeft>p{
         width: 70%;
     }
-    
     
 }
 main>.sideLeft>p>a{
