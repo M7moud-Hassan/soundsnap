@@ -388,7 +388,7 @@ main>.sideLeft>p>a{
 }
 @media only screen and (max-width: 500px) {
     main>.sideLeft{
-        height: 50%;
+        height: 55%;
         padding-right: 1em;
     }
     main>.sideLeft>p>a{
