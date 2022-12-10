@@ -4,30 +4,30 @@ main>.secondSection{
     margin-right: 15%;
 }
 
-main>.secondSection>.home-terms{
+main>.secondSection>.sectionHome{
     background-color: aqua;
     margin-top: 3em;
 }
-main>.secondSection>.home-terms>.image-container{
+main>.secondSection>.sectionHome>.imageContainer{
     position: relative;
     width: 16%;
     height: 10em;
     float: left;
     margin-left: 0.6%;
 }
-main>.secondSection>.home-terms>.medium{
+main>.secondSection>.sectionHome>.second{
     width: 32%;
     margin-left: 1.2%;
     margin-top: 0.6%;
 }
-main>.secondSection>.home-terms>.image-container>img{
+main>.secondSection>.sectionHome>.imageContainer>img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 0.5em;
 }
-main>.secondSection>.home-terms>.image-container>h3{
+main>.secondSection>.sectionHome>.imageContainer>h3{
     width: 100%;
     height: 100%;
     text-align: center;
@@ -37,18 +37,18 @@ main>.secondSection>.home-terms>.image-container>h3{
     cursor: pointer;
         
 }
-main>.secondSection>.home-terms>.image-container>h3>a{
+main>.secondSection>.sectionHome>.imageContainer>h3>a{
     position: relative;
     top: 45%;
     text-decoration: none;
     color: white;
 }
-main>.secondSection>.home-terms>.image-container>h3:hover{
+main>.secondSection>.sectionHome>.imageContainer>h3:hover{
     background-color: rgb(188, 241, 224);
 }
 
 @media only screen and (max-width: 830px) {
-    main>.secondSection>.home-terms>.image-container{
+    main>.secondSection>.sectionHome>.imageContainer{
         width: 32%;
         margin-left: 1.2%;
         margin-top: 1%;
@@ -57,11 +57,35 @@ main>.secondSection>.home-terms>.image-container>h3:hover{
 
 @media only screen and (max-width: 500px) {
 
-    main>.secondSection>.home-terms>.image-container{
+    main>.secondSection>.sectionHome>.imageContainer{
         width: 48.8%;
     }
-    main>.secondSection>.home-terms>.medium{
+    main>.secondSection>.sectionHome>.second{
         width: 100%;
     }
 
+}
+
+main>.secondSection>.itemProducer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 4%;
+}
+main>.secondSection>.itemProducer>div{
+    text-transform: uppercase;
+    background: #f2f2f2;
+    border-radius: .5em;
+    padding: 1em;
+    flex: 1 1 0;
+    white-space: nowrap;
+}
+main>.secondSection>.itemProducer>div>h3{
+    font-family: Inter,Helvetica,sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 3.5px;
 }
