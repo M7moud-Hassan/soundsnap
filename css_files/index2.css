@@ -319,6 +319,7 @@ footer>.copyright{
     }
 
     footer>.copyright{
+        top: 270%;
         padding: 3em;
     }
 }
