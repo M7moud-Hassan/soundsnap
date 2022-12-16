@@ -1,0 +1,65 @@
+form {
+    border: 3px solid #f1f1f1;
+    padding: 1.5em;
+  }
+
+  input.email, input.pass {
+    width: 100%;
+    padding: 1em 2em;
+    margin: 1em 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 1.5em  2em;
+    margin: 1em 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    opacity: 0.8;
+}
+.dialog {
+  display: none;
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 10%;
+  }
+
+.form-content {
+    background-color: #fefefe;
+    margin: .5em auto;
+    border: 1px solid #888;
+    width: 50%;
+}
+  .animate{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+
+  @media only screen and (max-width: 830px) {
+    .form-content{
+      width: 80%;
+    }
+  }

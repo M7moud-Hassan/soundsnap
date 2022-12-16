@@ -12,3 +12,26 @@ function ToggleSearchBar(){
         document.getElementById("searchBar").style.display="inline-block";
     }
 }  
+
+
+var logIn = document.getElementById('logIn');
+var signUp = document.getElementById('signUp');
+
+window.onclick = function(event) {
+  if (event.target == logIn||event.target==signUp) {
+    logIn.style.display = "none";
+    signUp.style.display = "none";
+  }
+}
+
+function openLogIn(event){
+  event.preventDefault();
+  logIn.style.display='block';
+ 
+}
+
+function openSignUp(event){
+  event.preventDefault();
+  signUp.style.display='block';
+ 
+}

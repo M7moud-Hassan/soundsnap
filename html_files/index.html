@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="../resources/favicon.png">
     <link rel="stylesheet" href="../css_files/index.css">
     <link rel="stylesheet" href="../css_files/index2.css">
+    <link rel="stylesheet" href="../css_files/index3.css">
 </head>
 <body>
 
@@ -38,7 +39,7 @@
             </ul>
         </nav>
         <span class="logIn">
-            <a href="#">Login</a>/<a href="#">Register</a>
+            <a href="#" onclick="openLogIn(event)">Login</a>/<a href="#" onclick="openSignUp(event)">Register</a>
         </span>
         <span class="socialBtn">
             <a href="#"><img class="social-image" src="../resources/facebook.svg" alt="Facebook button light"></a>
@@ -79,8 +80,8 @@
         <a href="#">Blog</a>
         <a href="#">FAQ</a>
         <a href="#">SFXHD</a>
-        <a href="#">Login</a>
-        <a href="#">Register</a>
+        <a href="#" onclick="openLogIn(event)">Login</a>
+        <a href="#" onclick="openSignUp(event)">Register</a>
     </div>
 
 
@@ -414,6 +415,38 @@
             <div class="copyright">Soundsnap © 2008 - 2022, All rights reserved.</div>
           </footer>
     </main>
+    <div id="logIn" class="dialog">
+    <form action="log_in.html" method="post" class="form-content animate">
+      <label for="uname"><b>Username</b></label>
+      <input class="email" type="text" placeholder="Enter Username" name="uname" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input class="pass" type="password" placeholder="Enter Password" name="psw" required>
+  
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </form>
+  </div>
+
+  <div id="signUp" class="dialog">
+    <form action="registration.html" method="post" class="form-content animate">
+      <label for="email"><b>Username</b></label>
+      <input class="email" type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="fName"><b>FirstName</b></label>
+      <input class="email" type="text" placeholder="Enter FirstName" name="fName" required>
+
+      <label for="lName"><b>LastName</b></label>
+      <input class="email" type="text" placeholder="Enter LastName" name="lName" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input class="pass" type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
       <script src="../js_files/my_js.js"></script>
 </body>
 </html>
