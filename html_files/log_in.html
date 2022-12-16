@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1 style="position: fixed; top:30%;left:30%;color:red; font-size: 5em;">
+       
+    </h1>
 </body>
+<script>
+var url=location.href.split('?')[1].split('&')[0].split('=')[1];
+document.getElementsByTagName('h1')[0].textContent="Hello "+url;
+</script>
 </html>
