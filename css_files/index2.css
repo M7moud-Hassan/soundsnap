@@ -294,8 +294,8 @@ footer>.copyright{
         text-align: center;
     }
     footer>.copyright{
-        top: 284%;
-        padding: 7em;
+        top: 273%;
+        padding: 10em;
     }
 }
 @media only screen and (max-width: 500px) {
