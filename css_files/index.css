@@ -60,12 +60,26 @@ header.mini{
     outline: 0;
 }
 
-input[type='text']:focus + span:after {
-    content:'\00D7';
+header>.containerSearch>.closeSearch{
+    width: 5%;
+    height: 70%;
+    
 }
+
+.load{
+    margin: 1%;
+    border: 3px solid green;
+    border-radius: 50%;
+}
+
+
+/*input[type='text']:focus + span:after {
+    content:'\00D7';
+}*/
 input[type='text']+span{
     z-index: 3;
 }
+
 .borderSec{
     position: relative;
     width: 49.4%;
@@ -339,8 +353,7 @@ main>.sideLeft>p{
      }
    
    
-}   
- 
+}  
 @media only screen and (max-width: 905px) {
      .containerSearch{
          width: 40%;

@@ -11,21 +11,21 @@
     <link rel="stylesheet" href="./css_files/index3.css">
 </head>
 <body>
-
     <header class="full">
         <a class="logo" href="index.html"><img src="./resources/logo.svg" alt="not found"></a>
         <div class="containerSearch">
             <img class="spanIcon" src="./resources/icon_search.png" alt="not-found">
-            <input type="text" name="search" class="inputSearch" placeholder="Search for sound effects">
-            <span class="closeSearch"></span>
+            <input type="text" onblur="checkClear()" name="search" id="search" class="inputSearch" placeholder="Search for sound effects">
+            <span class="closeSearch" id="clear" onclick="clearInput()">
+            </span>
             <span class="borderSec"></span>
-            <div class="dropMenu"><span>Sound Effects</span>
-                <div class="dropDownContainer">
+            <div class="dropMenu" ><span id="typeSearch">Sound Effects</span>
+                <div class="dropDownContainer" id="dropMenu">
                     <span class="arrowSpan"></span>
                     <span class="list">
                         <span>Search for</span>
-                        <a href="#">Sound Effects</a>
-                        <a href="#">Music</a>
+                        <a href="#" onclick="ChangeList(this);event.preventDefault()">Sound Effects</a>
+                        <a href="#" onclick="ChangeList(this);event.preventDefault()">Music</a>
                     </span>
                 </div>
             </div>
