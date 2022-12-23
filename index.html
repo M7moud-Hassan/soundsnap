@@ -17,7 +17,7 @@
         <div class="containerSearch">
             <img class="spanIcon" src="./resources/icon_search.png" alt="not-found">
             <input type="text" name="search" class="inputSearch" placeholder="Search for sound effects">
-            <span></span>
+            <span class="closeSearch"></span>
             <span class="borderSec"></span>
             <div class="dropMenu"><span>Sound Effects</span>
                 <div class="dropDownContainer">
@@ -30,7 +30,14 @@
                 </div>
             </div>
         </div>
-        <nav style="float: left;">
+        <span class="socialBtn">
+          <a href="#"><img class="social-image" src="./resources/facebook.svg" alt="Facebook button light"></a>
+          <a href="#"><img class="social-image" src="./resources/twitter.svg" alt="Twitter button light"></a>
+      </span>
+        <span class="logIn">
+          <a href="#" onclick="openLogIn(event)">Login</a>/<a href="#" onclick="openSignUp(event)">Register</a>
+      </span>
+        <nav style="float: right;">
             <ul>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Blog</a></li>
@@ -38,13 +45,7 @@
                 <li><a href="#">SFXHD</a></li>
             </ul>
         </nav>
-        <span class="logIn">
-            <a href="#" onclick="openLogIn(event)">Login</a>/<a href="#" onclick="openSignUp(event)">Register</a>
-        </span>
-        <span class="socialBtn">
-            <a href="#"><img class="social-image" src="./resources/facebook.svg" alt="Facebook button light"></a>
-            <a href="#"><img class="social-image" src="./resources/twitter.svg" alt="Twitter button light"></a>
-        </span>
+        
     </header>
 
 
