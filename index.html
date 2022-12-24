@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css_files/index2.css">
     <link rel="stylesheet" href="./css_files/index3.css">
 </head>
-<body>
+<body onresize="onResize()">
     <header class="full">
         <a class="logo" href="index.html"><img src="./resources/logo.svg" alt="not found"></a>
         <div class="containerSearch">
@@ -45,9 +45,10 @@
                 <li><a href="#">SFXHD</a></li>
             </ul>
         </nav>
-        
     </header>
-
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
 
     <header class="mini">
         <span class="menu" onclick="openNav()">
@@ -411,13 +412,16 @@
                 <a href="#"><img src="./resources/facebook.svg" alt=""></a>
                 <a href="#"><img src="./resources/twitter.svg" alt=""></a>
               </div>
+             <!-- <div style="clear: both;"></div>
+              <div class="copyright" style="text-align: center;">Soundsnap © 2008 - 2022, All rights reserved.</div>-->
             </div>
-            <div style="clear: both;"></div>
-            <div class="copyright">Soundsnap © 2008 - 2022, All rights reserved.</div>
+            
           </footer>
     </main>
     <div id="logIn" class="dialog">
+    
     <form action="./html_files/log_in.html" method="get" class="form-content animate">
+      <div style="margin-left:37%; "> <img src="./resources/logo.svg" alt="" width="30%" height="30%" ></div>
       <label for="uname"><b>Username</b></label>
       <input class="email" type="text" placeholder="Enter Username" name="uname" required>
   
@@ -433,6 +437,7 @@
 
   <div id="signUp" class="dialog">
     <form action="./html_files/registration.html" method="get" class="form-content animate">
+      <div style="margin-left:37%; "> <img src="./resources/logo.svg" alt="" width="30%" height="30%" ></div>
       <label for="email"><b>Email</b></label>
       <input class="email" type="text" placeholder="Enter Email" name="email" required>
 

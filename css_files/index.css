@@ -66,6 +66,21 @@ header>.containerSearch>.closeSearch{
     
 }
 
+.progress-container {
+    width: 100%;
+    height: .5em;
+    position: fixed;
+    background: transparent;
+    z-index: 34;
+    top: 4em;
+  }
+  
+.progress-bar {
+    height: .5em;
+    background: grey;
+    width: 0%;
+}
+
 .load{
     margin: 1%;
     border: 3px solid green;
