@@ -150,7 +150,7 @@ input+span{
     top: -2%;
     right: 30%;
     transform: rotate(45deg);
-   background-color: white;
+    background-color: white;
 }
 .dropDownContainer .list{
     position: absolute;
@@ -309,7 +309,7 @@ main{
 }
 main>.sideRight{
     background-image: url('../resources/main.jpg');
-    background-size:     cover;                      /* <------ */
+    background-size:     cover;                    
     background-repeat:   no-repeat;
     background-position: center center;
     width: 50%;
@@ -446,6 +446,5 @@ main>.sideLeft>p>a{
     }
     main>.sideLeft>h1{
         font-size: 1.2em;
-    }
-    
+    }   
 }

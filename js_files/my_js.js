@@ -19,17 +19,23 @@ function ToggleSearchBar(){
 //show login and sing up
 var logIn = document.getElementById('logIn');
 var signUp = document.getElementById('signUp');
+var video =document.getElementById('video');
 
 window.onclick = function(event) {
-  if (event.target == logIn||event.target==signUp) {
+  if (event.target == logIn||event.target==signUp||event.target==video) {
     logIn.style.display = "none";
     signUp.style.display = "none";
+    video.style.display = "none";
   }
 }
 
 function openLogIn(event){
   event.preventDefault();
   logIn.style.display='block';
+ 
+}
+function openVideo(event){
+  video.style.display='block';
  
 }
 

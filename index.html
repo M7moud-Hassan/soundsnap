@@ -95,7 +95,7 @@
                 Relevant Music</h1>
             <p>467,858 Available Sounds and Music tracks.<br>
                  Library Updated Weekly<br> <span style="color: rgb(8, 222, 8);">What is Relevant Music? </span> 
-                <span style="font-weight: bold; cursor: pointer; color: rgb(8, 222, 8);">Watch the Video</span>
+                <span style="font-weight: bold; cursor: pointer; color: rgb(8, 222, 8);" onclick="openVideo(event)">Watch the Video</span>
                 <a class="button-link" href="#">Get started</a>
             </p>
             
@@ -146,7 +146,7 @@
                 </h3>
               </div>
               <div class="imageContainer ">
-                <img  src="./resources/latin_reggaeton.png"  alt="Reggaeton sound effects">
+                <img  src="./resources/latin_reggaeton.jpg"  alt="Reggaeton sound effects">
                 <h3>
                   <a href="#" title="Reggaeton">
                     Reggaeton
@@ -162,7 +162,7 @@
                 </h3>
               </div>
               <div class="imageContainer second">
-                <img  src="./resources/afrobeat.png"  alt="Afrobeat sound effects">
+                <img  src="./resources/afrobeat.jpg"  alt="Afrobeat sound effects">
                 <h3>
                   <a href="#" title="Afrobeat">
                     Afrobeat
@@ -452,6 +452,12 @@
 
       <button type="submit">Sign Up</button>
     </form>
+  </div>
+  <div id="video" class="dialog">
+    <div class="form-content animate" style="width:100%; height:100%">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/rt1QzuytoAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
   </div>
       <script src="./js_files/my_js.js"></script>
 </body>
