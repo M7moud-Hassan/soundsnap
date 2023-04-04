@@ -308,7 +308,8 @@ main{
     position: absolute;
 }
 main>.sideRight{
-    background-image: url('../resources/main.jpg');
+    /*../resources/main.jpg*/
+    background-image: url('https://raw.githubusercontent.com/M7moud-Hassan/soundsnap/main/resources/main.jpg');
     background-size:     cover;                    
     background-repeat:   no-repeat;
     background-position: center center;
